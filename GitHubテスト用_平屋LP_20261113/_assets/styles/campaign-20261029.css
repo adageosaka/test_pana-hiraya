@@ -1,0 +1,49 @@
+/* 2026-10-29: TOP / reservation campaign image layout only. */
+.campaign-intro {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.campaign-period {
+	display: none;
+	width: 60%;
+	max-width: 576px;
+	margin-inline: auto;
+	overflow: hidden;
+}
+
+/* Preserve the supplied artwork and center it at 60% of the reservation width. */
+.campaign-period img {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+.campaign-intro > a,
+.campaign-lifestyle {
+	width: 100%;
+	max-width: 960px;
+	margin-inline: auto;
+}
+
+.campaign-lifestyle img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+@media (min-width: 768px) {
+	.campaign-intro {
+		gap: 32px;
+	}
+
+	.campaign-period {
+		display: block;
+	}
+
+	.campaign-lifestyle {
+		max-width: 740px;
+	}
+}
